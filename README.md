@@ -9,6 +9,12 @@ Certain PC builds will be run certain games smoothly (over 60 frames/sec) and so
 
 3DMark is a benchmarking tool that is run on a particular PC and runs a simulation. This simulation primarily takes into account the GPU and the CPU and sees the different kind of intensities they are able to handle with ease. At the end of the simulation, it provides a 3DMark Score where the higher value indicates that it has a higher average performance throughout all different graphic settings.
 
+The 3DMark Score can be calculated by the following:
+
+<p align="center">
+<img src="http://www.sciweavers.org/tex2img.php?eq=3DMark%5C%20Score%20%3D%20%20%5Cfrac%7B1%7D%7B%20%5Cfrac%7B0.85%7D%7BGraphics%5C%20Score%7D%2B%20%5Cfrac%7B0.15%7D%7BCPU%5C%20Score%7D%7D%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="3DMark\ Score =  \frac{1}{ \frac{0.85}{Graphics\ Score}+ \frac{0.15}{CPU\ Score}} " width="325 height="75" />
+</p>
+
 ## Aim
 In this project, I will be attempting to predict the 3DMark Score a particular computer build will have and thus we will be able to have an idea of whether they will be running smoothly or not.
 
@@ -16,12 +22,26 @@ In this project, I will be attempting to predict the 3DMark Score a particular c
 I am an aspiring data scientist who is all about new tech! I try to keep myself up to date with the latest gadgets that the public has access to. As someone who uses computers on a daily basis for both gaming and work, I like my software running as smoothly/fast as possible , within reason.
 
 ## The Data
-This data set was kindly provided by [UL](https://benchmarks.ul.com/?_ga=2.90438675.845709998.1584355578-1822667800.1580462866).  
-Special Thanks to *P. Virtanen* for helping me by giving me insights on what I should look out for.
+This data set was kindly provided by [UL](https://benchmarks.ul.com/?_ga=2.90438675.845709998.1584355578-1822667800.1580462866). This data set contains 260,000+ computers of different varieties that took the same 3DMark TimeSpy Extreme simulation
 
 ## EDA
 
-I inspected all the variables within the dataset and removed any abnormalities where there were physical limitations. I also removed any simulations that had a 3DMark Score of 0 as it may have indicated that the simulation was interrupted midway / malfunctions.
+I inspected all the variables within the dataset and removed any abnormalities where there were physical limitations. I also removed any simulations that had a 3DMark Score of 0 as it may have indicated that the simulation was interrupted midway / malfunctions. I noticed that there was a linear correlation between the CPU's that were used and the CPU score (a component of the 3DMark Score)
 
 ## Count Vectorising
 
+Count vectorising is a method in which we convert word in a row into values instead so we know how many times a particular word has come up in a given PC build. I noticed that Nvidia and Intel were coming up the most frequently, the businesses that currently dominate their respective markets. However, as of 2019, I am aware that AMD are starting to take over Intel and may start to see more AMD CPUs over next decade.
+
+## Modelling
+
+I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak classifiers aswell as the strong ones:
+
+|Model|Train Score|Test Score |
+|----------|----------|---------|
+|LinearRegression |0.919047|-7.848261e+14|
+|ElasticNetCV|0.918063|0.9185638|
+|AdaBoosted DecisionTreeRegresor|0.872963|0.8723586|
+|Adaboosted RandomForestRegressor|0.848886|0.8473644|
+
+## Credits
+Special thanks to *P. Virtanen* for helping by giving me insights on what I should look out for.
