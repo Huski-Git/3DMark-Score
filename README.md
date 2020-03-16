@@ -3,7 +3,7 @@
 ## Background Information
 In the world of technology, PCs have been a widely used device for a number of reasons, one of which is used for gaming. PC Gaming has been rapidly increasing over the coming decades due to the versatility of the different builds of a computer. Prices of gaming computers can range from around £500 all the way up to north of £15,000 and nowadays PCs are being custom built by individuals or are being built by comissioners.
 
-Once the PC is be built they may be content with the completed build however, they may come to the realisation that they may not be able to play a particular game ( E.g. Dark Souls 3 ) due to the fact that the CPU/GPU may not be performing as well as they had hoped and therefore they must purchase a brand new component and waste the original component. Things such as GPU's and RAM cards may be re-used and re-sold, but things such as the CPU, Motherboards tend not to be something that people will sell as it is very difficult to remove the CPU from the Motherboard once inserted due to the fact that the pins that connect the two together are very fragile and as soon as one of the pins are damaged/bent , they cannot be used again.
+Once the PC is built they may be content with the completed build however, they may come to the realisation that they may not be able to play a particular game ( E.g. Dark Souls 3 ) due to the fact that the CPU/GPU may not be performing as well as they had hoped and therefore they must purchase a brand new component and waste the original component. Things such as GPU's and RAM cards may be re-used and re-sold, but things such as the CPU, Motherboards tend not to be something that people will sell as it is very difficult to remove the CPU from the Motherboard once inserted due to the fact that the pins that connect the two together are very fragile and as soon as one of the pins are damaged/bent , they cannot be used again.
 
 Certain PC builds will be run certain games smoothly (over 60 frames/sec) and some may not and we are able to have a good idea of whether it does or not by running 3DMark.
 
@@ -17,7 +17,7 @@ I am an aspiring data scientist who is all about new tech! I try to keep myself 
 
 ## The Data
 This data set was kindly provided by [UL](https://benchmarks.ul.com/?_ga=2.90438675.845709998.1584355578-1822667800.1580462866).  
-Special Thanks to *P. Virtanen* for helping me by giving my insights on what I should look out for.
+Special Thanks to *P. Virtanen* for helping me by giving me insights on what I should look out for.
 
 ## EDA
 
