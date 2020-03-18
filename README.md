@@ -1,4 +1,7 @@
 # 3DMark Score - The Optimal Build
+<center>
+![](https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png)
+</center>
 
 ## Background Information
 In the world of technology, PCs have been a widely used device for a number of reasons, one of which is used for gaming. PC Gaming has been rapidly increasing over the coming decades due to the versatility of the different builds of a computer. Prices of gaming computers can range from around £500 all the way up to north of £15,000 and nowadays PCs are being custom built by individuals or are being built by comissioners.
@@ -38,15 +41,20 @@ I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor 
 
 <center>
   
-|      Model       |Train Score| Test Score |
-|:------------------:|:-----------:|:------------:|
-| LinearRegression |  0.919047 |-7.848261e+14|
-|   ElasticNetCV   |0.918063|0.9185638|
-|AdaBoosted DecisionTreeRegresor|0.872963|0.8723586|
-|Adaboosted RandomForestRegressor|0.848886|0.8473644|
+|             Model              | Train Score |  Test Score  |
+|:------------------------------:|:-----------:|:------------:|
+|LinearRegression                |  0.919047   |-7.848261e+14 |
+|ElasticNetCV                    |  0.918063   |  0.9185638   |
+|AdaBoosted DecisionTreeRegresor |  0.872963   |  0.8723586   |
+|Adaboosted RandomForestRegressor|  0.848886   |  0.8473644   |
 
 </center>
 
-I inspected the coefficients and feature importances to see which one affected the 3DMark Score the most:
+I inspected the top 5 coefficients and feature importances to see which one affected the 3DMark Score the most:
+
+![](https://github.com/Huski-Git/3DMark-Score/blob/master/Coefficients_and_features.png)
+
+As expected, we can see that the 2080 ti ( The most powerful GPU to date ) comes up the most frequently throughout all the models. However, it seems that number of GPUs seems to be a larger factor when trying to maximise the FPS ( frames per second ).
+
 ## Credits
 Special thanks to *P. Virtanen* for helping by giving me insights on what I should look out for.
