@@ -1,4 +1,4 @@
-# 3DMark Score - The Optimal Build
+# ![3DMark Score - The Optimal Build](https://github.com/Huski-Git/3DMark-Score/blob/master/3D%20Mark%20Score%20Capstone%20Project.ipynb)
 
 <p align="center">
 
@@ -40,21 +40,28 @@ Count vectorising is a method in which we convert word in a row into values inst
 
 ## Modelling
 
-I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak classifiers aswell as the strong ones:
+I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak learner aswell as the strong ones:
 
 |             Model              | Train Score |  Test Score  |
 |:------------------------------:|:-----------:|:------------:|
 |LinearRegression                |  0.919047   |-7.848261e+14 |
 |ElasticNetCV                    |  0.918063   |  0.9185638   |
+|DecisionTreeRegressor           |  0.785703   |  0.7860994   |
 |AdaBoosted DecisionTreeRegresor |  0.872963   |  0.8723586   |
+|RandomForestRegressor           |  0.906709   |  0.9081096   |
 |Adaboosted RandomForestRegressor|  0.848886   |  0.8473644   |
 
+It seems that Adaboosting has reduced my accuracy score, however reduced some biasness & variance with the data. We can clear see that the linear regression model seems to very overfitted with the training data.
 
 I inspected the top 5 coefficients and feature importances to see which one affected the 3DMark Score the most:
 
 <img src="https://github.com/Huski-Git/3DMark-Score/blob/master/Images/Coefficients_and_features.png">
 
 As expected, we can see that the 2080 ti ( The most powerful GPU to date ) comes up the most frequently throughout all the models. However, it seems that number of GPUs seems to be a larger factor when trying to maximise the FPS ( frames per second ).
+
+## Conclusion
+
+Having run these models, It seems that an ElasticNet with a Lasso regularisation seems to be the best model where it also seems to have the greatest improvement in its RMSE from a 42% baseline to 12%.
 
 ## Credits
 Special thanks to *P. Virtanen* for helping by giving me insights on what I should look out for.
