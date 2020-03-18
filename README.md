@@ -36,7 +36,7 @@ I inspected all the variables within the dataset and removed any abnormalities w
 
 ## Count Vectorising
 
-Count vectorising is a method in which we convert word in a row into values instead so we know how many times a particular word has come up in a given PC build. I noticed that Nvidia and Intel were coming up the most frequently, the businesses that currently dominate their respective markets. However, as of 2019, I am aware that AMD are starting to take over Intel and may start to see more AMD CPUs over next decade.
+Count vectorising is a method in which we convert word in a row into values instead so we know how many times a particular word has come up in a given PC build. I noticed that Nvidia and Intel were coming up the most frequently, the businesses that currently dominate their respective markets. However, as of 2019, I am aware that AMD are starting to become more popular and may start to see more AMD CPUs over next decade.
 
 ## Modelling
 
