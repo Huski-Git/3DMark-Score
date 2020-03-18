@@ -18,7 +18,7 @@ Certain PC builds will be run certain games smoothly (over 60 frames/sec) and so
 The 3DMark Score can be calculated by the following:
 
 <p align="center">
-<img src="http://www.sciweavers.org/tex2img.php eq=3DMark%5C%20Score%20%3D%20%20%5Cfrac%7B1%7D%7B%20%5Cfrac%7B0.85%7D%7BGraphics%5C%20Score%7D%2B%20%5Cfrac%7B0.15%7D%7BCPU%5C%20Score%7D%7D%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="3DMark\ Score =  \frac{1}{ \frac{0.85}{Graphics\ Score}+ \frac{0.15}{CPU\ Score}}" width="325" height="75" />
+<img src=https://github.com/Huski-Git/3DMark-Score/blob/master/Images/score_equation.png >
 </p>
 
 ## Aim
@@ -42,8 +42,6 @@ Count vectorising is a method in which we convert word in a row into values inst
 
 I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak classifiers aswell as the strong ones:
 
-<p align="center">
-  
 |             Model              | Train Score |  Test Score  |
 |:------------------------------:|:-----------:|:------------:|
 |LinearRegression                |  0.919047   |-7.848261e+14 |
@@ -51,7 +49,6 @@ I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor 
 |AdaBoosted DecisionTreeRegresor |  0.872963   |  0.8723586   |
 |Adaboosted RandomForestRegressor|  0.848886   |  0.8473644   |
 
-</p>
 
 I inspected the top 5 coefficients and feature importances to see which one affected the 3DMark Score the most:
 
