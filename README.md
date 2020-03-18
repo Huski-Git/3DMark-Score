@@ -16,7 +16,7 @@ The 3DMark Score can be calculated by the following:
 </p>
 
 ## Aim
-In this project, I will be attempting to predict the 3DMark Score a particular computer build will have and thus we will be able to have an idea of whether they will be running smoothly or not.
+In this project, I will be attempting to predict the 3DMark Score a particular computer build will have and thus we will be able to have an idea of whether they will be running smoothly or not. 
 
 ## Motivation 
 I am an aspiring data scientist who is all about new tech! I try to keep myself up to date with the latest gadgets that the public has access to. As someone who uses computers on a daily basis for both gaming and work, I like my software running as smoothly/fast as possible , within reason.
@@ -47,5 +47,6 @@ I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor 
 
 </center>
 
+I inspected the coefficients and feature importances to see which one affected the 3DMark Score the most:
 ## Credits
 Special thanks to *P. Virtanen* for helping by giving me insights on what I should look out for.
