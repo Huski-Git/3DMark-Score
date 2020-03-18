@@ -36,12 +36,16 @@ Count vectorising is a method in which we convert word in a row into values inst
 
 I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak classifiers aswell as the strong ones:
 
-|Model|Train Score|Test Score |
-|----------|----------|---------|
-|LinearRegression |0.919047|-7.848261e+14|
-|ElasticNetCV|0.918063|0.9185638|
+<center>
+  
+|      Model       |Train Score| Test Score |
+|:------------------:|:-----------:|:------------:|
+| LinearRegression |  0.919047 |-7.848261e+14|
+|   ElasticNetCV   |0.918063|0.9185638|
 |AdaBoosted DecisionTreeRegresor|0.872963|0.8723586|
 |Adaboosted RandomForestRegressor|0.848886|0.8473644|
+
+</center>
 
 ## Credits
 Special thanks to *P. Virtanen* for helping by giving me insights on what I should look out for.
