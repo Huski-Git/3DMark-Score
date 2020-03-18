@@ -1,7 +1,7 @@
 # 3DMark Score - The Optimal Build
 <center>
   
-![](https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png | width =100)
+![](https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png)
 </center>
 
 ## Background Information
