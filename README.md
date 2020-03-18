@@ -1,4 +1,4 @@
-# ![3DMark Score - The Optimal Build](https://github.com/Huski-Git/3DMark-Score/blob/master/3D%20Mark%20Score%20Capstone%20Project.ipynb)
+# [3DMark Score - The Optimal Build](https://github.com/Huski-Git/3DMark-Score/blob/master/3D%20Mark%20Score%20Capstone%20Project.ipynb)
 
 <p align="center">
 
