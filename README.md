@@ -1,8 +1,9 @@
 # 3DMark Score - The Optimal Build
-<center>
-  
-![](https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png)
-</center>
+
+<p align="center">
+<img src="https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png" width="350">
+</p>
+
 
 ## Background Information
 In the world of technology, PCs have been a widely used device for a number of reasons, one of which is used for gaming. PC Gaming has been rapidly increasing over the coming decades due to the versatility of the different builds of a computer. Prices of gaming computers can range from around £500 all the way up to north of £15,000 and nowadays PCs are being custom built by individuals or are being built by comissioners.
@@ -16,7 +17,7 @@ Certain PC builds will be run certain games smoothly (over 60 frames/sec) and so
 The 3DMark Score can be calculated by the following:
 
 <p align="center">
-<img src="http://www.sciweavers.org/tex2img.php?eq=3DMark%5C%20Score%20%3D%20%20%5Cfrac%7B1%7D%7B%20%5Cfrac%7B0.85%7D%7BGraphics%5C%20Score%7D%2B%20%5Cfrac%7B0.15%7D%7BCPU%5C%20Score%7D%7D%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="3DMark\ Score =  \frac{1}{ \frac{0.85}{Graphics\ Score}+ \frac{0.15}{CPU\ Score}} " width="325 height="75" />
+<img src="http://www.sciweavers.org/tex2img.php eq=3DMark%5C%20Score%20%3D%20%20%5Cfrac%7B1%7D%7B%20%5Cfrac%7B0.85%7D%7BGraphics%5C%20Score%7D%2B%20%5Cfrac%7B0.15%7D%7BCPU%5C%20Score%7D%7D%20&bc=White&fc=Black&im=png&fs=12&ff=arev&edit=0" align="center" border="0" alt="3DMark\ Score =  \frac{1}{ \frac{0.85}{Graphics\ Score}+ \frac{0.15}{CPU\ Score}}" width="325" height="75" />
 </p>
 
 ## Aim
