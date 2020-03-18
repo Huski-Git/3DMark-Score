@@ -1,7 +1,8 @@
 # 3DMark Score - The Optimal Build
 
 <p align="center">
-<img src="https://github.com/Huski-Git/3DMark-Score/blob/master/Logo.png" width="350">
+
+<img src="https://github.com/Huski-Git/3DMark-Score/blob/master/Images/Logo.png" width="350">
 </p>
 
 
@@ -41,7 +42,7 @@ Count vectorising is a method in which we convert word in a row into values inst
 
 I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor & RandomForest along with GridSearchCV in order to find the best parameters as well as generalising the data more. I also AdaBoosted all the models in order to improve the model by taking into account the weak classifiers aswell as the strong ones:
 
-<center>
+<p align="center">
   
 |             Model              | Train Score |  Test Score  |
 |:------------------------------:|:-----------:|:------------:|
@@ -50,11 +51,11 @@ I ran 4 different models : LinearRegression, ElasticNet , DecisionTreeRegressor 
 |AdaBoosted DecisionTreeRegresor |  0.872963   |  0.8723586   |
 |Adaboosted RandomForestRegressor|  0.848886   |  0.8473644   |
 
-</center>
+</p>
 
 I inspected the top 5 coefficients and feature importances to see which one affected the 3DMark Score the most:
 
-![](https://github.com/Huski-Git/3DMark-Score/blob/master/Coefficients_and_features.png)
+<img src="https://github.com/Huski-Git/3DMark-Score/blob/master/Images/Coefficients_and_features.png">
 
 As expected, we can see that the 2080 ti ( The most powerful GPU to date ) comes up the most frequently throughout all the models. However, it seems that number of GPUs seems to be a larger factor when trying to maximise the FPS ( frames per second ).
 
